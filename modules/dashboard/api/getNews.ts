@@ -3,7 +3,7 @@ import { cax } from "@/lib/axios";
 export async function getNews() {
   try {
     const response = await cax.get("/news/");
-    return response.data;
+    return response;
   } catch (err) {
     throw err;
   }
